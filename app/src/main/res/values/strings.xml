@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FarmaHelp</string>
+    <string name="title_home">Главная</string>
+    <string name="title_magazine">Журнал</string>
+    <string name="title_timeTable">Расписание</string>
+    <string name="title_settings">Настройки</string>
+</resources>
