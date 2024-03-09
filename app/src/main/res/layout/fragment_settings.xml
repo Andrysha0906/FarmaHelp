@@ -1,7 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context=".ui.settings.SettingsFragment" />
+    tools:context=".ui.settings.SettingsFragment" >
+
+
+    <Button
+        android:id="@+id/Ads_block1"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="53dp"
+        android:backgroundTint="@color/grean"
+        android:text="Отключить рекламу"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ProVersion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ProVersion"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/grean"
+        android:text="Купить PRO версию"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <ImageView
+        android:id="@+id/imbads"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/imbads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Ads_block1"
+        app:layout_constraintTop_toBottomOf="@+id/ProVersion" />
+
+    <TextView
+        android:id="@+id/text_ogr"
+        android:layout_width="239dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="12dp"
+        android:text="У вас версия с ограничениями"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ProVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/lock"
+        app:layout_constraintBottom_toTopOf="@+id/ProVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_ogr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/name_profile_btn"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/name_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ads_block1" />
+
+    <Button
+        android:id="@+id/family_user_btn"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Семейный доступ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_profile_btn" />
+
+    <Button
+        android:id="@+id/review_btn"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Напоминания"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/family_user_btn" />
+
+    <Button
+        android:id="@+id/decoration_btn"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Оформление темы"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_btn" />
+
+    <Button
+        android:id="@+id/estimation_btn"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Оцените приложение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decoration_btn"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Обратная связь"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estimation_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+
+        android:padding="10dp"
+        android:text="Предложить медикоменты "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/wblue"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Отзывы"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button20"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
