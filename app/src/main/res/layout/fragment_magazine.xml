@@ -23,7 +23,7 @@
         android:id="@+id/button_completed"
         android:layout_width="195dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/button_blue"
         android:text="@string/completed"
         app:layout_constraintBottom_toBottomOf="parent"
