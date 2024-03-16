@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "523585593681",
+    "firebase_url": "https://gandonfarmahelp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gandonfarmahelp",
+    "storage_bucket": "gandonfarmahelp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523585593681:android:17d2ab3a1663f25414b370",
+        "android_client_info": {
+          "package_name": "com.example.farmahelp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUJpPIaBv6sQjlF8yDCITDc2xjIqYVqOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
