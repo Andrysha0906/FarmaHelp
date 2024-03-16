@@ -5,4 +5,6 @@
     <string name="title_timeTable">Расписание</string>
     <string name="title_settings">Настройки</string>
     <string name="name_user">Саня</string>
+    <string name="active">Активные</string>
+    <string name="completed">Завершенные</string>
 </resources>
