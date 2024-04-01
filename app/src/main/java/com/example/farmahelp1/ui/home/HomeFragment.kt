@@ -1,6 +1,8 @@
 package com.example.farmahelp1.ui.home
 
 import android.adservices.adid.AdId
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.farmahelp1.MainActivity
+import com.example.farmahelp1.MainActivityAddPill
 import com.example.farmahelp1.MainActivitySearch
 import com.example.farmahelp1.R
 import com.example.farmahelp1.databinding.FragmentHomeBinding
@@ -32,10 +35,5 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
