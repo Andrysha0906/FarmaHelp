@@ -32,7 +32,11 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.buttonAddPills.setOnClickListener {
+            val intent = Intent(requireContext(), MainActivityAddPill::class.java)
+            startActivity(intent)
+        }
         val root: View = binding.root
         return root
     }
