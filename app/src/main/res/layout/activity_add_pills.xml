@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     android:background="@color/back_blue"
     android:backgroundTint="@color/back_blue"
-    tools:context=".MainActivityAddPill">
+    tools:context=".addPill.MainActivityAddPill">
 
     <Button
+        android:id="@+id/create_one_well"
         android:layout_width="310dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="505dp"
+        android:layout_marginBottom="500dp"
         android:backgroundTint="@color/button_blue"
         android:text="Создать 1 курс"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/create_several_courses"
         android:layout_width="310dp"
         android:layout_height="40dp"
         android:layout_marginBottom="460dp"
@@ -32,13 +34,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/button_create_procedure"
         android:layout_width="310dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="415dp"
+        android:layout_marginBottom="410dp"
         android:backgroundTint="@color/button_blue"
         android:text="Создать процедуру"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_several_courses"
+        app:layout_constraintVertical_bias="0.019" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

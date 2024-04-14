@@ -1,21 +1,15 @@
 package com.example.farmahelp1.ui.home
 
-import android.adservices.adid.AdId
 import android.content.Intent
-import android.content.IntentFilter
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.farmahelp1.MainActivity
-import com.example.farmahelp1.MainActivityAddPill
-import com.example.farmahelp1.MainActivitySearch
-import com.example.farmahelp1.R
+import com.example.farmahelp1.watch.MainActivityWatch
+import com.example.farmahelp1.search.MainActivitySearch
+import com.example.farmahelp1.addPill.MainActivityAddPill
 import com.example.farmahelp1.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -35,6 +29,14 @@ class HomeFragment : Fragment() {
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
         binding.buttonAddPills.setOnClickListener {
             val intent = Intent(requireContext(), MainActivityAddPill::class.java)
+            startActivity(intent)
+        }
+        binding.buttonMedicinePills.setOnClickListener{
+            val intent = Intent(requireContext(), MainActivitySearch::class.java)
+            startActivity(intent)
+        }
+        binding.buttonWigetTime.setOnClickListener{
+            val intent = Intent(requireContext(), MainActivityWatch::class.java)
             startActivity(intent)
         }
         val root: View = binding.root

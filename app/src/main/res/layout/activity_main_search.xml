@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivitySearch">
+    android:background="@drawable/back"
+    tools:context=".search.MainActivitySearch">
 
     <SearchView
         android:id="@+id/idSV"
-        android:layout_width="match_parent"
+        android:layout_width="430dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:background="@color/button_blue"
         android:iconifiedByDefault="false"
         android:padding="4dp"
-        android:queryHint="Search Programming language" />
+        android:queryHint="Search Programming language"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
-    <ListView
-        android:id="@+id/idLVProgrammingLanguages"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/idSV" />
-
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
